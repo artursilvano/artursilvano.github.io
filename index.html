@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu site</title>
+    <title>Jo Ken Po</title>
+    <link rel="shortcut icon" href="pedra.png"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome!</h1>
+    <header>       
+        <div id='score'>
+            <div id='user' class="sc"></div>
+            <div id='x'>X</div>
+            <div id='local' class="sc"></div>
+        </div>
+    </header>
+
+    <section>      
+        <input type="button" id="ped" value="🗿" onclick="jogar(0)">
+        <input type="button" id="pap" value="📜" onclick="jogar(1)"><br>
+        <input type="button" id="tes" value="✂️" onclick="jogar(2)">
+    </section>
+    
+    <section id="res">
+        <p id="divres"></p>
+    </section>
+        
+    <script src="js.js">a</script>
 </body>
 </html>
