@@ -1,0 +1,47 @@
+body{
+    font-family: Arial;
+    background-color: rgb(70, 70, 187);
+}
+div{
+    text-align: center;
+    margin-top: 40px;
+}
+#foto{
+    margin-top: -30px;
+    width: 200px;
+    border-radius: 100%;
+}
+#foto:hover{
+    box-shadow:  0 0 0.2em rgb(161, 161, 161);
+}
+a{
+    background-color: transparent;
+    background-color: rgba(53, 53, 139, 0.5);
+    display: block;
+    justify-content: center;
+    width: 300px;
+    height: 70px;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 15px;
+}
+a:hover{
+    background-color: rgb(51, 51, 139);           
+    box-shadow:  0 0 0.2em rgb(161, 161, 161);
+}
+.sym{
+    width: 50px;
+    position: absolute;
+    vertical-align: center;
+    margin: 10px;
+    margin-left: -130px;
+    
+}
+span{
+    text-decoration: dotted;
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    margin-top: 18px;
+    margin-left: -50px;
+}
