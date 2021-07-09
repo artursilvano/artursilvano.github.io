@@ -1,47 +1,59 @@
-body{
-    font-family: Arial;
-    background-color: rgb(70, 70, 187);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    text-decoration: none;
 }
-div{
-    text-align: center;
-    margin-top: 40px;
+body{
+    
+    background-color:rgb(0, 55, 207);
 }
 #foto{
-    margin-top: -30px;
+    display: flex;
+    margin-top: 30px;
+}
+#foto > img{
+    border-radius: 100px;
     width: 200px;
-    border-radius: 100%;
-}
-#foto:hover{
-    box-shadow:  0 0 0.2em rgb(161, 161, 161);
-}
-a{
-    background-color: transparent;
-    background-color: rgba(53, 53, 139, 0.5);
-    display: block;
-    justify-content: center;
-    width: 300px;
-    height: 70px;
-    border-radius: 30px;
     margin: auto;
-    margin-top: 15px;
 }
-a:hover{
-    background-color: rgb(51, 51, 139);           
-    box-shadow:  0 0 0.2em rgb(161, 161, 161);
+
+
+img{
+    width: 60px;
 }
-.sym{
-    width: 50px;
-    position: absolute;
-    vertical-align: center;
-    margin: 10px;
-    margin-left: -130px;
-    
+.container {         
+    margin: auto;
+    margin-top: 35px;      
+    width: 100px;
+    height: 90px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-areas: "icon text";
+    grid-template-columns: 100px 200px;
+    align-items: center;
+    justify-items: center;
+    transition: width 0.3s ease-out 0.1s;
+    background-color: rgb(34, 19, 255);
 }
-span{
-    text-decoration: dotted;
-    color: black;
-    font-size: 30px;
-    position: absolute;
-    margin-top: 18px;
-    margin-left: -50px;
+.container > img{
+    grid-area: icon;
+}        
+.container > a{
+    grid-area: text;
+    font-size: 0px;
+    position: relative;
+    left: -50%;
+    color: rgba(0, 0, 0, 0);
+    transition: left 0.3s ease-out 0.2s,
+    color 0.2s ease-out 0.2s;
+}
+.container:hover{
+    width: 320px;
+}
+.container:hover a{
+    font-size: 35px;
+    left: 0;
+    color: white;
 }
