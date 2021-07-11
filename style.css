@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: auto;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     user-select: none;
@@ -20,40 +20,57 @@ body{
 }
 
 
+
+
 img{
     width: 60px;
 }
-.container {         
-    margin: auto;
+.menu { 
+    list-style: none;
     margin-top: 35px;      
-    width: 100px;
-    height: 90px;
-    border-radius: 30px;
-    display: grid;
-    grid-template-areas: "icon text";
-    grid-template-columns: 100px 200px;
-    align-items: center;
-    justify-items: center;
-    transition: width 0.3s ease-out 0.1s;
-    background-color: rgb(34, 19, 255);
 }
-.container > img{
-    grid-area: icon;
-}        
-.container > a{
-    grid-area: text;
-    font-size: 0px;
-    position: relative;
-    left: -50%;
-    color: rgba(0, 0, 0, 0);
-    transition: left 0.3s ease-out 0.2s,
-    color 0.2s ease-out 0.2s;
+.menu .list-item{
+    height: 80px;
+    padding: 2px;
+    margin: 20px 0;
 }
-.container:hover{
-    width: 320px;
+.list-item .fa{
+    text-align: center;
+    line-height: 40px;
 }
-.container:hover a{
+.list-item a span{
+    width: 0;
+    left: 70px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
     font-size: 35px;
-    left: 0;
+    letter-spacing: 0.6;
+    white-space: nowrap;
+    line-height: 80px;
+    transition: 0.25s;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+.list-item a{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    text-decoration: none;
     color: white;
+    position: relative;
+    border-radius: 15px;
+    transition: left 0.25s;
+}
+.list-item a:hover span{
+    width: auto;
+    padding: 0 20px;
+    overflow: visible; 
+}
+
+
+a, a span{
+    background-color: blue;
 }
